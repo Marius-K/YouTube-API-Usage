@@ -28,7 +28,6 @@ class SearchController extends Controller
         ];
 
         $results = Youtube::searchAdvanced($params, true);
-        //return dd($results["results"][0]->snipppet->title);
         return view('show', [ 'results' => $results["results"] ]);
     }
 
