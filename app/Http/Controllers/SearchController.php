@@ -14,8 +14,6 @@ class SearchController extends Controller
 
     public function search(Request $request)
     {
-        Youtube::setApiKey('AIzaSyCV06pikvGpNrr0HCF2YzZhLD7MwUywlQE');
-
         $request->validate([
             'query' => 'required'
         ]);
