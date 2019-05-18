@@ -4,7 +4,7 @@
 <div class="container">
     <div class="row justify-content-center">
         @foreach ($results as $video)
-            <div class="card" style="width: 18rem;">
+            <div class="card m-1" style="width: 18rem;">
                 <a href="https://youtu.be/{{ $video->id->videoId }}">
                     <img class="card-img-top" src="{{ $video->snippet->thumbnails->medium->url }}" alt="{{ $video->snippet->title }}">
                 </a>

@@ -15,11 +15,11 @@ class SearchController extends Controller
     public function search(Request $request)
     {
         $request->validate([
-            'query' => 'required'
+            'searchquery' => 'required'
         ]);
         
         $params = [
-            'q'             => $request->query,
+            'q'             => $request->searchquery,
             'type'          => 'video',
             'part'          => 'id, snippet',
             'maxResults'    => 5

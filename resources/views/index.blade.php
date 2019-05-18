@@ -10,8 +10,8 @@
                     <form method="POST" action="{{ url('submit') }}">
                         @csrf
                         <div class="form-group">
-                            <label for="query">Search for a video</label>
-                            <input type="text" class="form-control" name="query" id="query">
+                            <label for="searchquery">Search for a video</label>
+                            <input type="text" class="form-control" name="searchquery" id="searchquery">
                         </div>
                         <button type="submit" class="btn btn-primary">Submit</button>
                     </form>
